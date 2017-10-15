@@ -25,7 +25,7 @@ $( document ).ready(function() {
       });
 
       inputNumber1.addEventListener('change', function(){
-        slider.noUiSlider.set([null, this.value]);
+        slider.noUiSlider.set([this.value, null]);
       });
       inputNumber2.addEventListener('change', function(){
         slider.noUiSlider.set([null, this.value]);
@@ -35,32 +35,36 @@ $( document ).ready(function() {
 
 
 
-
-
-(function($){
-
-  $(document).on('materialize', function () {
+$(document).ready(function() {
     $('select').material_select();
+    $('.collapsible').collapsible();
+    
   });
 
-  $(function(){
+// (function($){
+
+//   $(document).on('ready', function () {
+//     $('select').material_select();
+//   });
+
+//   $(function(){
 
 
 
-    // $('.button-collapse').sideNav({
-    //   menuWidth: 600,
-    //   edge: 'right',
-    //   closeOnClick: true,
-    //   draggable: true
-    // });
-    // $('ul.tabs').tabs();
-    // $('.collapsible').collapsible();
-    // $('select').material_select();
-    // $('.materialboxed').materialbox();
-    // $('.modal').modal();
-    // $('select').material_select();
-    // $('.parallax').parallax();
+//     // $('.button-collapse').sideNav({
+//     //   menuWidth: 600,
+//     //   edge: 'right',
+//     //   closeOnClick: true,
+//     //   draggable: true
+//     // });
+//     // $('ul.tabs').tabs();
+//     // $('.collapsible').collapsible();
+//     // $('select').material_select();
+//     // $('.materialboxed').materialbox();
+//     // $('.modal').modal();
+//     // $('select').material_select();
+//     // $('.parallax').parallax();
 
-  });
+//   });
 
-});
+// });

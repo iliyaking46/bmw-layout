@@ -2531,7 +2531,7 @@ th {
   box-sizing: inherit;
 }
 */
-/*ul:not(.browser-default) {
+ul:not(.browser-default) {
   padding-left: 0;
   list-style-type: none;
 }
@@ -2539,7 +2539,7 @@ th {
 ul:not(.browser-default) li {
   list-style-type: none;
 }
-*/
+
 a {
   color: #039be5;
   text-decoration: none;

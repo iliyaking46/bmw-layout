@@ -198,19 +198,24 @@ main .slider{
 
 
 /*Каталог*/
-.nav_crumbs a{
-    font-size: 0.8rem;
+
+/* Навигация в каталоге */
+.nav_crumbs .catalog-back{
+    font-size: 1rem;
     color: #8e8e8e;
 }
-.nav_crumbs a:hover{
-    color: #0653b6; 
-}
 .nav_crumbs i{
-    margin-right: 20px;
-    font-size: 10px;
-    line-height: 35px;
+    margin-right: 15px;
+    font-size: 20px;
+    line-height: 30px;
 }
-.breadcrumb{
+
+a.breadcrumb{
+    color: #8e8e8e;
+    font-size: 0.9rem;
+}
+a.breadcrumb:hover{
+    color: #0653b6; 
 }
 .breadcrumb:before{
     font-size: 17px;
@@ -222,6 +227,8 @@ main .slider{
 }
 
 
+
+/* Фильтр */
 .filter-side form ul{
     list-style: none;
     margin: 0;
@@ -261,19 +268,80 @@ main .slider{
 }
 
 
+/*Информация о фильтре над списком товаров*/
+.filter-box{
+    font-size: 0.9rem;
+    font-family: BMWLight;
+    color: #8e8e8e;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 9px 0 6px!important;
+}
+.filter-box b{
+    font-family: BMWBold;
+}
+
+.filter-box .input-field{
+    margin: 0;
+    padding: 0;
+}
+.filter-box .select-wrapper input{
+    margin: 0;
+    padding: 0;
+    height: 2rem;
+    font-size: 0.9rem;
+    border: none;
+}
+.filter-box .dropdown-content li{
+    position: relative;
+}
+.filter-box .dropdown-content li > span{
+    color: #0653b6;
+}
+
+.filter-box .dropdown-content .icon{
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    margin: 0;
+    height: 20px;
+    width: 20px;
+}
 
 
+/* Карточка товара*/
+.product-cards {
+    font-family: BMWLight; 
+}
+.product-cards .card .card-title{
+    height: 60px;
+    overflow: hidden;
+    padding: 5px;
+    font-size: 1rem;
+    line-height: 25px;
+    color: #0653b6;
+    transition: .3s;
+}
+.product-cards .card .add-to-cart a{
+    display: block;
+    color: #ffffff;
+    background: #0653b6;
+    border: 2px solid #0653b6;
+    transition: .3s;
+}
+.product-cards .card a:hover {
+    color: #0653b6;
+    background: #ffffff;
+}
+.product-cards .card-content{
+    padding: 10px 5px;
+}
 
 
-
-
-
-
-
-
-
-
-
+/*Paginate*/
+.pagination li.active {
+    background-color: #0653b6;
+}
 
 .clearfix() {
   &:before,
