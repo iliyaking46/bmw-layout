@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Категории</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main_tags.css">
+    <link rel="stylesheet" type="text/css" href="css/categories_page.css"> 
+    <!-- Шрифты для навбара
+    <link href="https://fonts.googleapis.com/css?family=Scada|PT+Sans+Narrow" rel="stylesheet"> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+      window.onload = function() {
+          var uList = document.querySelector('li .active-li')
+          console.log(uList)
+          var iList = document.querySelectorAll('.navbar-element a')
+          console.log(iList)
+          iList.forEach(function (list) {
+              list.addEventListener('mouseenter', function (e) {
+                  uList.classList.remove('active-li')
+                  console.log(e)
+              }, false)
+              list.addEventListener('mouseout', function (e) {
+                  uList.classList.add('active-li')
+              }, false)
+          })
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="header fix-size">
+<!--        <div class="shadow-head fix-size"></div>-->
+        <div class="top-header content">
+            <div class="city-top"><i class="fa fa-map-marker" aria-hidden="true"></i><span> Железногорск, Курская область</span>
+            </div>
+            <a href="index.html" class="logo-center">Элит Ювелир</a>
+            
+            <div class="tel-info">
+                <a href="tel:+79191732000"><i class="ring fa fa-phone" aria-hidden="true"></i> 8 919 173-2000</a>
+                <span class="about-number">Звонки по россии бесплатные</span>
+            </div>
+            <div class="basket"> 
+                <div class="round"><i class="fa fa-shopping-basket" aria-hidden="true" style=" color: #FF615B;"></i></div>
+                <span>Корзина</span>
+            </div>
+        </div>
+        <nav class="content">
+          <ul class="grayNav">
+            <li class="navbar-element "> <a href="categories.html" class="active-li">Каталог</a> </li>
+            <li class="navbar-element"> <a href="categories.html">Коллекции</a> </li>
+            <li class="navbar-element"> <a href="categories.html">Акции</a> </li>
+            <li class="navbar-element"> <a href="main_page.html">О нас</a> </li>
+            <li class="navbar-element"> <a href="shops.html">Магазины</a> </li>
+          </ul>
+        </nav>
+    </div>
+  
+<!--    <div class="container">-->
+
+    <div class="breadcrumb container">
+      <a href="index.html">Главная /</a>
+    <!-- <%= icon('long-arrow-right')%> -->
+      <a href="#"> Категории</a>
+    </div>
+<!--    </div>-->
+
+    <div class="categories container">
+     <h1 class="h1-categories">Выберите категорию</h1>
+      <a href="list_of_products.html" class="item-category">
+         <div class="category-title">Кольца</div>
+        <img src="images/ring5.jpg" class="img-category">   
+        <div class="items-in-stock">Товаров в категории: 2134</div>
+      </a>
+      
+      <a href="list_of_products.html" class="item-category">
+         <div class="category-title">Обручальные кольца</div>
+          <img src="images/1337.gif" class="img-category">
+            <div class="items-in-stock">Товаров в категории: 2134</div>
+      </a>
+      
+      <a href="list_of_products.html" class="item-category">
+        <div class="category-title">Серьги</div>
+        <img src="images/yearing3.gif" class="img-category">
+        <div class="items-in-stock">Товаров в категории: 2134</div>
+      </a>
+      
+      <a href="list_of_products.html" class="item-category">
+        <div class="category-title">Подвески</div>
+        <img src="images/neckel3.jpg" class="img-category">
+        <div class="items-in-stock">Товаров в категории: 2134</div>
+      </a>
+      
+      <a href="list_of_products.html" class="item-category">
+        <div class="category-title">Часы</div>
+        <img src="images/watch2.png" class="img-category">
+        <div class="items-in-stock">Товаров в категории: 2134</div>
+      </a>
+      
+      <a href="list_of_products.html" class="item-category">
+        <div class="category-title">Браслеты</div>
+        <img src="images/bracelet1.jpg" class="img-category">
+        <div class="items-in-stock">Товаров в категории: 2134</div>
+      </a>
+    </div>
+  <footer>
+    <p>© ООО "Элит Ювелир" 2017. All rights reserved. Developed by iliyaking</p>
+  </footer>
+  </body>
+</html>
