@@ -75,7 +75,10 @@ header ul{
     padding: 0;
 }
 .top-nav-links{
-    height: 30px;
+    height: 35px;
+}
+.top-nav-links ul{
+    margin-top: 5px;
 }
 .top-nav-links ul li{
     display: inline-block;
@@ -382,7 +385,7 @@ a.breadcrumb:hover{
     font-family: BMWLight;
 }
 .tabs-content.carousel{
-    min-height: 500px;
+    /*min-height: 500px;*/
 }
 
 .collection{
@@ -393,7 +396,17 @@ a.breadcrumb:hover{
     float: right;
 }
 
-
+.product-info .add-to-cart a{
+    display: block;
+    color: #ffffff;
+    background: #0653b6;
+    border: 2px solid #0653b6;
+    transition: .3s;
+}
+.product-info .add-to-cart a:hover {
+    color: #0653b6;
+    background: #ffffff;
+}
 
 
 

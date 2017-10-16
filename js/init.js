@@ -5,7 +5,7 @@
 $(document).ready(function() {
     $('select').material_select();
     $('.collapsible').collapsible();
-    $('ul.tabs').tabs({ 'swipeable': true });
+    $('ul.tabs').tabs(/*{ 'swipeable': true }*/);
   });
 
 // (function($){

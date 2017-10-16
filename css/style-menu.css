@@ -67,7 +67,7 @@ Main Components
 
 -------------------------------- */
 header {
-  height: 80px;
+  height: 75px;
   background: #8e8e8e;
 }
 @media only screen and (max-width: 993px){
@@ -290,7 +290,7 @@ header {
 @media only screen and (min-width: 1024px) {
   .cd-dropdown {
     position: absolute;
-    top: calc(100% - 2px);
+    top: 100%;
     /* reset style*/
     height: auto;
     width: auto;
