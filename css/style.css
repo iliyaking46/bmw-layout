@@ -195,7 +195,16 @@ main .slider{
     margin-top: 0;
     margin-bottom: 0;
 }
-
+.clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
 
 /*Каталог*/
 
@@ -343,16 +352,51 @@ a.breadcrumb:hover{
     background-color: #0653b6;
 }
 
-.clearfix() {
-  &:before,
-  &:after {
-    content: " ";
-    display: table;
-  }
-  &:after {
-    clear: both;
-  }
+
+
+/* Страница товара*/
+.product-title{
+
 }
+
+.product-image{
+    width: 100%;
+}
+
+
+
+/* Tabs */
+.tabs .tab a {
+    color: #8e8e8e;
+}
+.tabs .tab a:hover, .tabs .tab a.active {
+    color: #0653b6;
+}
+.tabs .indicator {
+    height: 5px;
+    background-color: #0653b6;
+}
+
+#description p{
+    font-size: 1rem;
+    font-family: BMWLight;
+}
+.tabs-content.carousel{
+    min-height: 500px;
+}
+
+.collection{
+    font-family: BMWLight;
+    border: none;
+}
+.collection .content{
+    float: right;
+}
+
+
+
+
+
 /*Footer*/
 footer{
     font-family: roboto;
