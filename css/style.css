@@ -573,7 +573,7 @@ a.breadcrumb:hover{
     margin-bottom: 50px;
 }
 
-.product-image{
+.product-image img{
     width: 100%;
 }
 
@@ -603,6 +603,9 @@ a.breadcrumb:hover{
     font-family: BMWLight;
     border: none;
 }
+.collection .row{
+    margin: 0;
+}
 .collection .content{
     float: right;
 }
@@ -627,6 +630,41 @@ a.breadcrumb:hover{
     right: 0;
 }
 
+/*cart*/
+
+.collection [type="checkbox"]:checked + label:before {
+    border-right: 2px solid #0653b6;
+    border-bottom: 2px solid #0653b6;
+}
+.collection [type="checkbox"].filled-in:checked + label:after {
+    border: 2px solid #0653b6;
+    background-color: #ffffff;
+}
+
+.collection .collection-header p{
+    color: #8e8e8e;
+}
+
+.collection .collection-item{
+    padding: 0;
+}
+.collection img{
+    margin-top: 10px;
+}
+.collection .material-icons{
+    line-height: 3.5rem;
+}
+a.confirm-cart{
+    display: block;
+    color: #ffffff;
+    background: #0653b6;
+    border: 2px solid #0653b6;
+    transition: .3s;
+}
+a.confirm-cart:hover {
+    color: #0653b6;
+    background: #ffffff;
+}
 
 
 
