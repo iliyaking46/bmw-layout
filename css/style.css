@@ -731,6 +731,10 @@ a.breadcrumb:hover{
     border: 2px solid #0653b6;
     transition: .3s;
 }
+.product-info .collection .collection-item{
+    padding: 10px 20px;
+}
+
 .product-info .add-to-cart a:hover {
     color: #0653b6;
     background: #ffffff;
@@ -770,7 +774,7 @@ a.breadcrumb:hover{
     margin-top: 10px;
 }
 .collection .material-icons{
-    line-height: 3.5rem;
+    line-height: 4.3rem;
 }
 a.confirm-cart{
     display: block;
