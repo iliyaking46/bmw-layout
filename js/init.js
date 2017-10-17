@@ -6,8 +6,15 @@ $(document).ready(function() {
     $('select').material_select();
     $('.collapsible').collapsible();
     $('ul.tabs').tabs(/*{ 'swipeable': true }*/);
-  });
+  
+	
+	$('.search-toogle').on('click', function(event){
+		event.preventDefault();
+		$( '.search-field' ).slideToggle("slide	");
+		$('.search-toogle').toggleClass('active');
+	});
 
+});
 // (function($){
 
 //   $(document).on('ready', function () {

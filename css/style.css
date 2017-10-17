@@ -49,6 +49,12 @@ a.active{
 }
 
 
+.cd-main-content {
+  min-height: calc(100vh - 100px);
+  padding: 2em 5%;
+  line-height: 2;
+}
+
 main .container nav {
     box-shadow: none;
     padding: 0.875rem 0;
@@ -128,6 +134,155 @@ header ul{
     right: 20px;
     }
 }
+@media only screen and (min-width: 920px){
+    .img-logo img{
+    right: 80px;
+    }
+}
+
+
+.search-field{
+    height: 80px;
+    width: 50%;
+    display: none;
+}
+.cd-search{
+        position: relative;
+}
+.cd-search input[type="search"] {
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background-color: #ffffff;
+    color: #8e8e8e;
+    border: 2px solid #8e8e8e;
+    border-radius: 0;
+}
+
+.search-field button:focus {
+    outline: none;
+    background-color: transparent;
+}
+.close-icon {
+    border: none;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    right: 10px;
+    margin: auto;
+    bottom: 0;
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+    outline: 0;
+    cursor: pointer;
+}
+.close-icon:after,.close-icon:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    height: 2px;
+    width: 22px;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+    margin: auto;
+    background: #212121;
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.close-icon:after{
+    webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.close-icon:before{
+    webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
+
+.search-box:not(:valid) ~ .close-icon {
+    display: none;
+}
+
+.cd-search input[type="search"]::-webkit-input-placeholder {
+  color: #8e8e8e;
+}
+.cd-search input[type="search"]::-moz-placeholder {
+  color: #8e8e8e;
+}
+.cd-search input[type="search"]:-moz-placeholder {
+  color: #8e8e8e;
+}
+.cd-search input[type="search"]:-ms-input-placeholder {
+  color: #8e8e8e;
+}
+.cd-search input[type="search"]:focus {
+  background: #ffffff;
+  color: #111433;
+  outline: none;
+}
+.cd-search input[type="search"]:focus::-webkit-input-placeholder {
+  color: rgba(17, 20, 51, 0.4);
+}
+.cd-search input[type="search"]:focus::-moz-placeholder {
+  color: rgba(17, 20, 51, 0.4);
+}
+.cd-search input[type="search"]:focus:-moz-placeholder {
+  color: rgba(17, 20, 51, 0.4);
+}
+.cd-search input[type="search"]:focus:-ms-input-placeholder {
+  color: rgba(17, 20, 51, 0.4);
+}
+@media only screen and (min-width: 1024px) {
+  .cd-search input[type="search"] {
+    background-color: #ebebeb;
+  }
+  .cd-search input[type="search"]::-webkit-input-placeholder {
+    color: #b3b3b3;
+  }
+  .cd-search input[type="search"]::-moz-placeholder {
+    color: #b3b3b3;
+  }
+  .cd-search input[type="search"]:-moz-placeholder {
+    color: #b3b3b3;
+  }
+  .cd-search input[type="search"]:-ms-input-placeholder {
+    color: #b3b3b3;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -283,11 +438,16 @@ a.breadcrumb:hover{
 /*Информация о фильтре над списком товаров*/
 .filter-box{
     font-size: 0.9rem;
+    height: 46px;
     font-family: BMWLight;
+    line-height: normal;
     color: #8e8e8e;
     border-bottom: 1px solid #ddd;
     margin-bottom: 10px;
-    padding: 9px 0 6px!important;
+    padding: 15px 0 14px!important;
+}
+.filter-box .filter-info{
+    /*margin: 10px 0;*/
 }
 .filter-box b{
     font-family: BMWBold;
@@ -296,12 +456,15 @@ a.breadcrumb:hover{
 .filter-box .input-field{
     margin: 0;
     padding: 0;
+    width: 20%;
 }
+
 .filter-box .select-wrapper input{
     margin: 0;
     padding: 0;
-    height: 2rem;
+    height: 100%;
     font-size: 0.9rem;
+    line-height: normal;
     border: none;
 }
 .filter-box .dropdown-content li{
@@ -334,6 +497,9 @@ a.breadcrumb:hover{
     color: #0653b6;
     transition: .3s;
 }
+.product-cards .card:hover .card-image{
+    opacity: 0.7;
+}
 .product-cards .card .add-to-cart a{
     display: block;
     color: #ffffff;
@@ -348,6 +514,46 @@ a.breadcrumb:hover{
 .product-cards .card-content{
     padding: 10px 5px;
 }
+.product-cards .card-content .prices-card{
+    text-align: center;
+}
+
+.product-cards .card-content .prices-card .new-price{
+    font-size: 1.25rem;
+    color: #0653b6;
+    margin-right: 10px;
+}
+.product-cards .card-content .prices-card .old-price{
+    color: #757575;
+}
+/* Rating */
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: normal
+}
+.rating:hover {
+    cursor: pointer;
+}
+.rating > span {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+}
+.rating > span:hover,
+.rating > span:hover ~ span {
+    color: transparent;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+    content: "\2605";
+    position: absolute;
+    left: 3px; 
+    color: gold;
+}
+
 
 
 /*Paginate*/
@@ -360,6 +566,11 @@ a.breadcrumb:hover{
 /* Страница товара*/
 .product-title{
 
+}
+
+.main-info{
+    position: relative;
+    margin-bottom: 50px;
 }
 
 .product-image{
@@ -395,7 +606,9 @@ a.breadcrumb:hover{
 .collection .content{
     float: right;
 }
-
+.product-info {
+    margin-bottom: 50px;
+}
 .product-info .add-to-cart a{
     display: block;
     color: #ffffff;
@@ -407,6 +620,13 @@ a.breadcrumb:hover{
     color: #0653b6;
     background: #ffffff;
 }
+.bottom-info{
+    margin: 20px 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 
 
 
