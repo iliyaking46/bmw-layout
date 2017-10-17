@@ -8,10 +8,22 @@ $(document).ready(function() {
     $('ul.tabs').tabs(/*{ 'swipeable': true }*/);
   
 	
-	$('.search-toogle').on('click', function(event){
+	$('.search-toggle').on('click', function(event){
 		event.preventDefault();
-		$( '.search-field' ).slideToggle("slide	");
-		$('.search-toogle').toggleClass('active');
+		$( '.search-block' ).slideToggle("slide	");
+		$('.search-toggle').toggleClass('active');
+	});
+
+	$('.cart-toggle').on('click', function(event){
+		event.preventDefault();
+		$( '.cart-block' ).slideToggle("slide");
+		$('.cart-toggle').toggleClass('active');
+	});
+
+	$('.profile-toggle').on('click', function(event){
+		event.preventDefault();
+		$( '.profile-block' ).slideToggle("slide");
+		$('.profile-toggle').toggleClass('active');
 	});
 
 });

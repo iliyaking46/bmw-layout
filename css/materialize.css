@@ -5659,6 +5659,15 @@ label {
 /* Text Inputs + Textarea
    ========================================================================== */
 /* Style Placeholders */
+
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
 ::-webkit-input-placeholder {
   color: #d1d1d1;
 }
@@ -5771,7 +5780,7 @@ input[type=datetime-local]:focus:not([readonly]),
 input[type=tel]:focus:not([readonly]),
 input[type=number]:focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #e53935;
+  border-bottom: 1px solid #0653b6;
 }
 
 input:not([type]):focus:not([readonly]) + label,
