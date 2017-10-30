@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 @font-face{
     font-family: BMWBold; /* Имя шрифта */
     src: url(../fonts/BMWTypeBold.woff); /* Путь к файлу со шрифтом */
@@ -479,6 +479,9 @@ main .slider{
 /*Каталог*/
 
 /* Навигация в каталоге */
+.nav_crumbs{
+    font-family: Roboto,Arial,Helvetica,sans-serif; 
+}
 .nav_crumbs .catalog-back{
     font-size: 1rem;
     color: #8e8e8e;
@@ -521,7 +524,7 @@ a.breadcrumb:hover{
 }
 .filter-side .collapsible-body{
     padding: 0;
-    font-family: Arial;
+    font-family: Arial,Helvetica,Roboto,sans-serif;
     font-size: 0.8rem;
     border: none;
 }
@@ -551,7 +554,7 @@ a.breadcrumb:hover{
 .filter-box{
     font-size: 0.9rem;
     height: 46px;
-    font-family: BMWLight;
+    font-family: Roboto,Arial,Helvetica,sans-serif; 
     line-height: normal;
     color: #8e8e8e;
     border-bottom: 1px solid #ddd;
@@ -598,7 +601,7 @@ a.breadcrumb:hover{
 
 /* Карточка товара*/
 .product-cards {
-    font-family: BMWLight, Arial; 
+    font-family: Roboto,Arial,Helvetica,sans-serif; 
 }
 .product-cards .card .card-title{
     height: 60px;
@@ -681,6 +684,7 @@ a.breadcrumb:hover{
 }
 
 .main-info{
+    font-family: Roboto,Arial,Helvetica,sans-serif; 
     position: relative;
     margin-bottom: 50px;
 }
@@ -693,6 +697,7 @@ a.breadcrumb:hover{
 
 /* Tabs */
 .tabs .tab a {
+    font-family: BMWBold;
     color: #8e8e8e;
 }
 .tabs .tab a:hover, .tabs .tab a.active {
@@ -705,14 +710,9 @@ a.breadcrumb:hover{
 
 #description p{
     font-size: 1rem;
-    font-family: BMWLight;
-}
-.tabs-content.carousel{
-    /*min-height: 500px;*/
 }
 
 .collection{
-    font-family: BMWLight;
     border: none;
 }
 .collection .row{
@@ -792,7 +792,7 @@ a.confirm-cart:hover {
 
 /*Footer*/
 footer{
-    font-family: roboto;
+    font-family: Roboto,Arial,Helvetica,sans-serif; 
     background: #8e8e8e;
 }
 footer .container .row{
