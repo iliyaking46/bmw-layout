@@ -316,9 +316,6 @@ div.col.counter {
     background: #0653b6;
     border-radius: 3px;
 }
-.counter input{
-    height: 2rem;
-}
 
 .cart-field .delete-item-cart i{
     line-height: 4.3rem;
@@ -739,11 +736,19 @@ a.breadcrumb:hover{
     color: #0653b6;
     background: #ffffff;
 }
+.product-info .price-item{
+    margin-bottom: 20px;
+}
 .bottom-info{
-    margin: 20px 0;
+    margin: 0;
     position: absolute;
     bottom: 0;
     right: 0;
+}
+@media only screen and (max-width: 800px){
+    .bottom-info{
+    position: relative;
+    }
 }
 
 /*cart*/

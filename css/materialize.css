@@ -5701,10 +5701,10 @@ input[type=number],
 textarea.materialize-textarea {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #9e9e9e;
+  border: 1px solid #9e9e9e;
   border-radius: 0;
   outline: none;
-  height: 3rem;
+  height: 2rem;
   width: 100%;
   font-size: 1rem;
   margin: 0 0 20px 0;
@@ -5738,7 +5738,7 @@ input[type=number][readonly="readonly"],
 textarea.materialize-textarea:disabled,
 textarea.materialize-textarea[readonly="readonly"] {
   color: rgba(0, 0, 0, 0.26);
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.26);
+  border: 1px dotted rgba(0, 0, 0, 0.26);
 }
 
 input:not([type]):disabled + label,
@@ -5780,7 +5780,7 @@ input[type=datetime-local]:focus:not([readonly]),
 input[type=tel]:focus:not([readonly]),
 input[type=number]:focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #0653b6;
+  border: 1px solid #0653b6;
 }
 
 input:not([type]):focus:not([readonly]) + label,
