@@ -4929,7 +4929,7 @@ small {
 .btn, .btn-large {
   text-decoration: none;
   color: #fff;
-  background-color: #e53935;
+  background-color: #1c69d4;
   text-align: center;
   letter-spacing: .5px;
   transition: .2s ease-out;
@@ -4937,7 +4937,7 @@ small {
 }
 
 .btn:hover, .btn-large:hover {
-  background-color: #2bbbad;
+  background-color: #0653b6;
 }
 
 .btn-floating {
