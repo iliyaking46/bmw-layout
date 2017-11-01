@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @font-face{
-    font-family: BMWBold; /* Имя шрифта */
-    src: url(../fonts/BMWTypeBold.woff); /* Путь к файлу со шрифтом */
+    font-family: BMWBold;
+    src: url(../fonts/BMWTypeBold.woff);
 }
 @font-face{
-    font-family: BMWLight; /* Имя шрифта */
-    src: url(../fonts/BMWTypeLight.woff); /* Путь к файлу со шрифтом */
+    font-family: BMWLight;
+    src: url(../fonts/BMWTypeLight.woff);
 }
 
 
@@ -13,7 +13,6 @@ body {
     /*display: flex;*/
     /*min-height: 100vh;*/
     flex-direction: column;
-    /*    background: #FFF8EE;*/
     font-family: "BMWBold", Arial, sans-serif;
     /*    font-weight: lighter;*/
     color: black;
@@ -46,6 +45,13 @@ a:hover{
 }
 a.active{
     color: #0653b6;
+}
+
+.btn{
+		text-transform: none;
+}
+.btn:hover{
+    color: #ffffff;
 }
 
 
@@ -394,11 +400,35 @@ div.col.counter {
 
 
 
+.main-slider{
 
-main .slider{
-    height: 100%;
+}
+
+.main-slider .slide{
     position: relative;
 }
+.main-slider .slide-content{
+
+}
+.main-slider .slide-header{
+    font-size: 2rem;
+}
+.main-slider .slide-subheader{
+    font-size: 1.1rem;
+    margin-top: 0;
+}
+.main-slider .slide-link{
+    margin: 0 10px 10px;
+    padding: 0.55rem;
+}
+@media only screen and (min-width: 800px) {
+    .main-slider .slide-content{
+        position: absolute;
+        top: 0;
+        left: 50px;
+    }
+}
+
 
 
 .gray-blocks .row.container .col{

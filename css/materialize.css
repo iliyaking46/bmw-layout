@@ -4859,9 +4859,8 @@ small {
   border: none;
   border-radius: 2px;
   display: inline-block;
-  height: 36px;
   line-height: 36px;
-  padding: 0 2rem;
+  padding: 3px 30px;
   text-transform: uppercase;
   vertical-align: middle;
   -webkit-tap-highlight-color: transparent;
@@ -4923,7 +4922,7 @@ small {
 
 .btn:focus, .btn-large:focus,
 .btn-floating:focus {
-  background-color: #1d7d74;
+  background-color: #1c69d4;
 }
 
 .btn, .btn-large {
